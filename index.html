@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <h1>To Do List</h1>
+</head>
+<body class="container"> 
+    <br>
+    <div class="card bg-info">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                    <label for="new-start-date">Start Date</label>
+                    <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                    <label for="new-end-date">Due Date</label>
+                    <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                        <label for="new-end-date">Task</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Task">
+                     </div>
+                 </div>
+            <div>
+                <button id="add" class="btn btn-outline-dark mt-3">Create</button>
+            </div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=D-UmfqFjpl0" class="btn btn-success btn-sm active mt-3 mb-3" role="button" aria-pressed="true">Click Here To Become Wiser</a>
+    </div>
+
+    <table id="list" class="table table-dark table-striped text-center">
+        <tr>
+            <th>Task</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
